@@ -1,5 +1,5 @@
 /**
- * Manvitha Designers - Interactive Controller
+ * Maanvitha Designers - Interactive Controller
  * Luxury Embroidery Workstations, 4K Bridal Blouse Atelier & Gesture Engine
  */
 
@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const applyTheme = (themeName) => {
     const normalized = THEME_METAS[themeName] ? themeName : 'obsidian';
     document.documentElement.setAttribute('data-theme', normalized);
-    localStorage.setItem('manvitha-theme', normalized);
+    localStorage.setItem('maanvitha-theme', normalized);
 
     const meta = THEME_METAS[normalized];
     if (themeActiveIcon) themeActiveIcon.textContent = meta.icon;
@@ -444,7 +444,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Restore saved theme
-  const savedTheme = localStorage.getItem('manvitha-theme') || 'obsidian';
+  const savedTheme = localStorage.getItem('maanvitha-theme') || localStorage.getItem('manvitha-theme') || 'obsidian';
   applyTheme(savedTheme);
 
   // =========================================================================
@@ -623,7 +623,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (blouseModalWaBtn) {
-      const waMsg = encodeURIComponent(`Hi Manvitha Designers, I am inspecting the output style "${item.title}" on your website. I want to buy an embroidery machine capable of producing this style.`);
+      const waMsg = encodeURIComponent(`Hi Maanvitha Designers, I am inspecting the output style "${item.title}" on your website. I want to buy an embroidery machine capable of producing this style.`);
       blouseModalWaBtn.href = `https://wa.me/919985578276?text=${waMsg}`;
     }
 
@@ -881,7 +881,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // WhatsApp Direct link
     if (modalWhatsappBtn) {
-      const waText = encodeURIComponent(`Hi Manvitha Designers, I am interested in knowing more about ${data.name} (${data.price}).`);
+      const waText = encodeURIComponent(`Hi Maanvitha Designers, I am interested in knowing more about ${data.name} (${data.price}).`);
       modalWhatsappBtn.href = `https://wa.me/919985578276?text=${waText}`;
     }
 
@@ -986,7 +986,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       const waMsg = encodeURIComponent(
-        `Hello Manvitha Designers,\n` +
+        `Hello Maanvitha Designers,\n` +
         `Name: ${name}\n` +
         `City: ${city}\n` +
         `Mobile: ${mobile}\n` +

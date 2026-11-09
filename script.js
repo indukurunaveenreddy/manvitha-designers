@@ -11,7 +11,7 @@ const MACHINES_DATA = {
     frameSize: '20" X 32" (500 X 800) Frame Size',
     price: '₹350,000.00',
     status: 'Available For Immediate Dispatch • Andhra Pradesh & Karnataka',
-    desc: 'Maanvitha C Body Pro fully updated version: 12-needle commercial single-head computerized embroidery workstation powered by Dahao A15 Pro software and a 10" touch screen display.',
+    desc: '12 Needles Single Head Pro • 20" X 32" (500 X 800) Frame • Dahao A15 Pro • 1200 RPM',
     image: 'assets/maanvitha_c_body_pro_real.jpg',
     poster: 'assets/maanvitha_c_body_pro_poster.jpg',
     specs: [

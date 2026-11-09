@@ -7,26 +7,27 @@
 const MACHINES_DATA = {
   'butterfly-single-head': {
     id: 'butterfly-single-head',
-    name: 'M&D Butterfly Single Head',
-    frameSize: '20*32 Frame Size',
+    name: 'Maanvitha C Body Pro (Fully Updated Version)',
+    frameSize: '20" X 32" (500 X 800) Frame Size',
     price: '₹350,000.00',
-    status: 'Available For Immediate Dispatch',
-    desc: 'Premium compact model optimized for boutique embroidery, designer blouses, and custom fashion apparel.',
-    image: 'assets/machine_butterfly.jpg',
+    status: 'Available For Immediate Dispatch • Andhra Pradesh & Karnataka',
+    desc: 'Maanvitha C Body Pro fully updated version: 12-needle commercial single-head computerized embroidery workstation powered by Dahao A15 Pro software and a 10" touch screen display.',
+    image: 'assets/maanvitha_c_body_pro_real.jpg',
+    poster: 'assets/maanvitha_c_body_pro_poster.jpg',
     specs: [
       'A15 PRO DAHAO SOFTWARE',
       '10" INC TOUCH SCREEN DISPLAY',
-      '20"X 32" (500 X 800) FRAME SIZE',
-      '12 NEEDLES & SINGLE HEAD MACHINE',
+      '20" X 32" (500 X 800) FRAME SIZE',
+      '12 NEEDLES & SINGLE HEAD PRO MACHINE',
       'AUTOMATIC TRIMMING SYSTEM',
-      'THREAD BREAKING SENSOR SYSTEM',
-      'MANUAL, SEMI-AUTOMATIC & FULLY AUTOMATIC MODES',
-      'HIGH SPEED COLOUR CHANGING SYSTEM',
-      'SEQUENCE, CORDING & BEADING DEVICE SUPPORT',
-      'PHOTOS, T-SHIRTS, CAPS EMBROIDERY COMPATIBLE',
-      'USB & HIGH-SPEED WIFI CONNECTIVITY',
-      'EMERGENCY STOP SAFETY BUTTON',
-      '1200 RPM PEAK SPEED WITH ULTRA-LOW NOISE GEARS'
+      'THREAD BREAKING SYSTEM',
+      'MANUAL, SEMI-AUTOMATIC & FULLY AUTOMATIC',
+      'COLOUR CHANGING SYSTEM',
+      'SEQUENCE, CORDING & BEADING SUPPORTING',
+      'PHOTOS, T-SHIRTS, CAPS EMBROIDERY',
+      'USB & WIFI CONNECTIVITY SUPPORT',
+      'EMERGENCY STOP BUTTON',
+      '1200 RPM SPEED AND LOW NOISE'
     ]
   },
   'double-head': {
@@ -1053,10 +1054,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  document.querySelectorAll('.instrument-tab-btn, .instrument-thumb-card').forEach(el => {
-    el.addEventListener('click', () => {
-      const key = el.getAttribute('data-instrument');
-      if (key) switchInstrument(key);
+  // =========================================================================
+  // 13. Maanvitha C Body Pro Media Switcher (Real Photo vs Specs Poster)
+  // =========================================================================
+  const cBodyMainImg = document.getElementById('c-body-main-img');
+  const cBodyTabs = document.querySelectorAll('.c-body-tab-btn');
+  const cBodyThumbs = document.querySelectorAll('.c-body-thumb');
+
+  const switchCBodyMedia = (targetSrc) => {
+    if (!cBodyMainImg || !targetSrc) return;
+    cBodyMainImg.style.opacity = '0';
+    setTimeout(() => {
+      cBodyMainImg.src = targetSrc;
+      cBodyMainImg.style.opacity = '1';
+    }, 150);
+
+    cBodyTabs.forEach(tab => {
+      const isPoster = tab.getAttribute('data-target') === 'poster';
+      const active = isPoster ? targetSrc.includes('poster') : !targetSrc.includes('poster');
+      tab.classList.toggle('active', active);
+    });
+
+    cBodyThumbs.forEach(thumb => {
+      thumb.classList.toggle('active', thumb.getAttribute('data-img') === targetSrc);
+    });
+  };
+
+  cBodyTabs.forEach(tab => {
+    tab.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = tab.getAttribute('data-target');
+      const src = target === 'poster' ? 'assets/maanvitha_c_body_pro_poster.jpg' : 'assets/maanvitha_c_body_pro_real.jpg';
+      switchCBodyMedia(src);
+    });
+  });
+
+  cBodyThumbs.forEach(thumb => {
+    thumb.addEventListener('click', (e) => {
+      e.preventDefault();
+      const src = thumb.getAttribute('data-img');
+      if (src) switchCBodyMedia(src);
     });
   });
 });

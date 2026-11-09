@@ -5663,3 +5663,356 @@ body {
     padding: 0.9rem 0.8rem !important;
   }
 }
+
+
+/* ==========================================================================
+   17. MAANVITHA C BODY PRO SPOTLIGHT — Flagship 12-Needle Workstation
+   ========================================================================== */
+
+.c-body-spotlight-wrapper {
+  position: relative;
+  background: linear-gradient(145deg, rgba(20, 26, 40, 0.96) 0%, rgba(10, 14, 24, 0.98) 100%) !important;
+  border: 2px solid #d4af37 !important;
+  border-radius: 12px !important;
+  padding: 3rem 2.4rem !important;
+  margin: 2.5rem auto 3.5rem !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6), 0 0 35px rgba(212, 175, 55, 0.18) !important;
+  max-width: 1200px !important;
+}
+
+.c-body-spotlight-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1.25fr !important;
+  gap: 2.5rem !important;
+  align-items: start !important;
+}
+
+/* Media Column */
+.c-body-media-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+}
+
+.c-body-frame {
+  background: #080c14 !important;
+  border: 1.5px solid rgba(212, 175, 55, 0.45) !important;
+  border-radius: 8px !important;
+  padding: 1rem !important;
+  position: relative !important;
+}
+
+/* Tabs Bar */
+.c-body-view-tabs {
+  display: flex !important;
+  gap: 0.6rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.c-body-tab-btn {
+  flex: 1 !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(212, 175, 55, 0.3) !important;
+  color: #e2e8f0 !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.76rem !important;
+  font-weight: 700 !important;
+  padding: 0.55rem 0.8rem !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.4rem !important;
+  transition: all 0.25s ease !important;
+}
+
+.c-body-tab-btn:hover {
+  background: rgba(212, 175, 55, 0.2) !important;
+  border-color: #d4af37 !important;
+  color: #ffffff !important;
+}
+
+.c-body-tab-btn.active {
+  background: linear-gradient(135deg, #d4af37, #f5bd42) !important;
+  color: #0b0f19 !important;
+  border-color: #f5bd42 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.4) !important;
+}
+
+/* Image Viewport */
+.c-body-img-viewport {
+  position: relative !important;
+  width: 100% !important;
+  aspect-ratio: 4 / 3 !important;
+  background: #000000 !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.c-body-featured-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  transition: opacity 0.2s ease, transform 0.4s ease !important;
+}
+
+.c-body-frame-badge {
+  position: absolute !important;
+  bottom: 10px !important;
+  left: 10px !important;
+  background: rgba(10, 14, 22, 0.92) !important;
+  border: 1px solid #d4af37 !important;
+  color: #f5bd42 !important;
+  font-size: 0.68rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  padding: 0.3rem 0.65rem !important;
+  border-radius: 4px !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* Thumbs Bar */
+.c-body-thumbs-bar {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 0.75rem !important;
+  margin-top: 0.8rem !important;
+}
+
+.c-body-thumb {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+  padding: 0.4rem 0.6rem !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(212, 175, 55, 0.25) !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+}
+
+.c-body-thumb:hover,
+.c-body-thumb.active {
+  background: rgba(212, 175, 55, 0.15) !important;
+  border-color: #d4af37 !important;
+}
+
+.c-body-thumb img {
+  width: 44px !important;
+  height: 44px !important;
+  object-fit: cover !important;
+  border-radius: 4px !important;
+}
+
+.c-body-thumb span {
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  color: #e2e8f0 !important;
+}
+
+/* Info Column */
+.c-body-info-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1rem !important;
+}
+
+.c-body-title-wrap {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.8rem !important;
+  flex-wrap: wrap !important;
+}
+
+.c-body-butterfly-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  background: linear-gradient(135deg, #c8102e, #9e1b3d) !important;
+  color: #ffffff !important;
+  font-size: 0.72rem !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.08em !important;
+  padding: 0.35rem 0.8rem !important;
+  border-radius: 4px !important;
+  border: 1px solid rgba(245, 189, 66, 0.4) !important;
+}
+
+.c-body-version-tag {
+  background: rgba(212, 175, 55, 0.15) !important;
+  border: 1px solid #d4af37 !important;
+  color: #f5bd42 !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em !important;
+  padding: 0.35rem 0.8rem !important;
+  border-radius: 4px !important;
+}
+
+.c-body-headline {
+  font-family: var(--font-serif) !important;
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem) !important;
+  font-weight: 900 !important;
+  letter-spacing: 0.02em !important;
+  color: #ffffff !important;
+  margin: 0 !important;
+  line-height: 1.15 !important;
+}
+
+.c-body-sub {
+  font-family: var(--font-sans) !important;
+  font-size: 0.98rem !important;
+  line-height: 1.65 !important;
+  color: #cdd7e5 !important;
+  margin: 0 !important;
+}
+
+.c-body-price-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1.2rem !important;
+  flex-wrap: wrap !important;
+  padding: 0.4rem 0 !important;
+}
+
+.c-body-price {
+  font-family: var(--font-sans) !important;
+  font-size: 1.65rem !important;
+  font-weight: 900 !important;
+  color: #f5bd42 !important;
+  letter-spacing: -0.01em !important;
+}
+
+.c-body-status-pill {
+  background: rgba(34, 197, 94, 0.15) !important;
+  border: 1px solid rgba(34, 197, 94, 0.5) !important;
+  color: #4ade80 !important;
+  font-size: 0.74rem !important;
+  font-weight: 700 !important;
+  padding: 0.35rem 0.75rem !important;
+  border-radius: 20px !important;
+}
+
+/* 13-Point Specs Grid */
+.c-body-specs-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 0.75rem 1rem !important;
+  background: rgba(7, 10, 18, 0.7) !important;
+  border: 1px solid rgba(212, 175, 55, 0.25) !important;
+  border-radius: 8px !important;
+  padding: 1.2rem 1.4rem !important;
+}
+
+.c-spec-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 0.65rem !important;
+}
+
+.c-spec-item-full {
+  grid-column: 1 / -1 !important;
+  border-top: 1px dashed rgba(212, 175, 55, 0.25) !important;
+  padding-top: 0.6rem !important;
+  margin-top: 0.2rem !important;
+}
+
+.c-spec-item .spec-icon {
+  font-size: 1.15rem !important;
+  line-height: 1.2 !important;
+  flex-shrink: 0 !important;
+}
+
+.c-spec-item .spec-text {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.1rem !important;
+}
+
+.c-spec-item .spec-text strong {
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  letter-spacing: 0.02em !important;
+}
+
+.c-spec-item .spec-text span {
+  font-size: 0.68rem !important;
+  color: #9aa4ba !important;
+}
+
+/* Location Strip */
+.c-body-location-strip {
+  display: flex !important;
+  gap: 0.8rem !important;
+  flex-wrap: wrap !important;
+  padding: 0.6rem 0.8rem !important;
+  background: rgba(212, 175, 55, 0.08) !important;
+  border: 1px solid rgba(212, 175, 55, 0.35) !important;
+  border-radius: 6px !important;
+}
+
+.c-body-location-strip .loc-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.4rem !important;
+  font-size: 0.8rem !important;
+  color: #e2e8f0 !important;
+}
+
+.c-body-location-strip .loc-badge strong {
+  color: #f5bd42 !important;
+}
+
+/* Action Buttons */
+.c-body-actions {
+  display: flex !important;
+  gap: 0.8rem !important;
+  flex-wrap: wrap !important;
+  margin-top: 0.4rem !important;
+}
+
+.c-body-actions .btn {
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  padding: 0.75rem 1.4rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .c-body-spotlight-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .c-body-spotlight-wrapper {
+    padding: 2rem 1.4rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .c-body-specs-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.8rem !important;
+    padding: 1rem !important;
+  }
+
+  .c-body-location-strip {
+    flex-direction: column !important;
+    gap: 0.4rem !important;
+  }
+
+  .c-body-actions {
+    flex-direction: column !important;
+  }
+
+  .c-body-actions .btn {
+    width: 100% !important;
+  }
+}
